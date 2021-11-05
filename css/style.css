@@ -135,51 +135,150 @@ a {
      text-decoration: none;
      outline: none !important;
 }
-
+#grupo 
+  /* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 50px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Style the header */
+header {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 50%;
+    height: 600px; /* only for demonstration, should be removed */
+    background: #fff;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 50px;
+    width: 50%;
+    background-color: #ffffff;
+    height: 600px; /* only for demonstration, should be removed */
+  }
+  
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 50px;
+    text-align: center;
+    color: white;
+  }
 
 .layout_padding {
-    padding-bottom: 70px;
+    padding-bottom: 0px;
     padding-top: 70px;
 }
 
 .header_section{
-	width: 100%; 
-	float: left;
-	background-image: url(../images/banner.jpg);
-	height: 500px;
-	padding-top: 20px;	
-	background-size: cover;
+  width: 100%; 
+  float: left;
+  background-image: url(../images/banner.jpg);
+  height: 500px;
+  padding-top: 20px;  
+  background-size: cover;
     background-repeat: no-repeat;
 }
 
 .active{ 
-	background-color: #7862A3;
-	padding-top: 5px; 
-	padding-bottom: 5px; 
-	color: #fff;
-  margin-top: 10px;
+  background-color: #7862A3;
+  padding-top: 5px; 
+  padding-bottom: 5px; 
+  color: #fff;
+  margin-top: 5px;
 
  }
 
 .menu_text{
-	width: 50%;
-	float: right;
+  width: 50%;
+  float: right;
 
 }
-.menu_text ul{ margin:0px; padding: 0px;}
+
+
+.menu_text ul{ margin: 0px; padding: 0px;}
 .menu_text li{ 
-	float: left; 
-	padding-right: 15px;
-  padding-left: 15px; 
-	font-size: 17pt;
+  float:right; 
+
+  padding-right: 25px;
+    padding-left: 25px; 
+  font-size: 20pt;
+}
+
+
 }
 .menu_text li a{
-	color: #7862A3;
+  color: #7862A3;
 } 
 
 .last{
-	padding-top: 20px;
-	color: #7862A3;
+  padding-top: 20px;
+  color: #7862A3;
 }
 
 .banner_main {
@@ -189,26 +288,26 @@ a {
 }
 
 .taital{
-	width: 57%; 
-	float: left;
-	font-size: 60pt;
-	color: #7862A3;
-	text-align: right;
+  width: 57%; 
+  float: left;
+  font-size: 60pt;
+  color: #7862A3;
+  text-align: right;
 }
 
 .ram{ width: 45%; float: left; }
 
 .consectetur_text{
-	width: 90%;
-	float: left;
-	font-size: 24px;
-	color: #7862A3;
-	line-height: 50px;
+  width: 90%;
+  float: left;
+  font-size: 24px;
+  color: #7862A3;
+  line-height: 50px;
 }
 
 .banner_bt{
-	width: 100%;
-	float: left;
+  width: 100%;
+  float: left;
 }
 
 .read_bt {
@@ -222,9 +321,9 @@ a {
 }
 
 .box{
-	width: 100%;
-	float: left;
-	text-align: right;
+  width: 100%;
+  float: left;
+  text-align: right;
 }
 
 .numbar_text {
@@ -237,24 +336,24 @@ a {
 }
 
 .about_section{
-	width: 100%;
-	float: left;
-	background-image: url(../images/about-img.jpg);
-	height: auto;
-	background-size: 100%;
-	background-repeat: no-repeat;
+  width: 100%;
+  float: left;
+  background-image: url(../images/about-img.jpg);
+  height: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .about_text{
-	width: 100%;
-	float: left;
+  width: 100%;
+  float: left;
 }
 
 .about_taital{
-	width: 100%;
-	float: left;
-	font-size: 50pt;
-	text-align: right;
+  width: 100%;
+  float: center;
+  font-size: 50pt;
+  text-align:center;
 
 }
 .about_taital_1{
@@ -268,7 +367,7 @@ a {
 
 
 .about{
-	padding-top: 715px;
+  padding-top: 715px;
 }
 
 .magna_text {
@@ -282,8 +381,8 @@ a {
 }
 
 .about_bt{
-	width: 100%;
-	float: left;
+  width: 100%;
+  float: left;
 }
 
 .more_bt {
@@ -298,14 +397,19 @@ a {
 }
 
 .gallery_main{
-	width: 100%;
-	float: left;
-	background-color:#7862A3;
-	height: auto;
+  width: 100%;
+  background-image: url(../images/xd.jpg);
+  background-repeat: no-repeat;
+ 
+  background-size: cover;
+  float: right;
+  background-color:#7862A3;
+  height: auto auto ;
 }
 
+
 .sed_text{
-	font-size: 19pt;
+  font-size: 19pt;
     color: #7862A3;
     text-align: right;
     line-height: 40px;
@@ -316,18 +420,44 @@ a {
 }
 
 .images{
-	margin-top: 20px;
+  margin-top: 20px;
+    display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 .gallery_blog {
-  position: relative;
+  position:center;
   margin-top: 20px;
+  
+  
+}
+.container2 {
+ 
+  grid-template-columns: auto auto auto  ;
+  grid-gap: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  background-color: ;
+  
+}
+
+.container2 > div {
+  text-align: center;
+ 
+  font-size: 30px;
 }
 
 .image {
   display: block;
   width: 100%;
   height: auto;
+  display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
 }
 
 .overlay {
@@ -340,9 +470,10 @@ a {
   width: 100%;
   height:0;
   transition: .5s ease;
+
 }
 
-.gallery_blog:hover .overlay {
+.gallery_blog:hover.overlay {
     bottom: 0;
     height: 100%;
     opacity: 0.80;
@@ -361,18 +492,18 @@ a {
 }
 
 .gallery_section_2{
-	width: 100%; 
-	float: left;
-	background-color: #7862A3;
-	height: auto;
-	padding-top: 100px;
+  width: 100%; 
+  float: left;
+  background-color: #7862A3;
+  height: auto;
+  padding-top: 10px;
 }
 
 .pet_taital{
-	width: 100%;
-	float: left;
-	font-size: 44pt;
-	color: #7862A3;
+  width: 100%;
+  float: left;
+  font-size: 44pt;
+  color: #7862A3;
 }
 
 .lorem_text {
@@ -399,9 +530,9 @@ a {
 }
 
 .box_3{
-	width: 100%;
-	float: left;
-	margin-top: 102px;
+  width: 100%;
+  float: left;
+  margin-top: 102px;
 }
 
 .numbar{
@@ -416,37 +547,41 @@ a {
 }
 
 ._img{
-	width: 100%; 
-	float: left;
+  width: 100%; 
+  float: left;
+    display: inline-flex;
+  grid-template-columns: auto auto ;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 .touch_section{
-	width: 100%;
-	float: left;
-	background-image: url(../images/email-img.jpg);
-	height: auto;
-	padding-top: 55px;
-	background-size: 100%;
+  width: 100%;
+  float: left;
+  background-image: url(../images/email-img.jpg);
+  height: auto;
+  padding-top: 200px;
+  background-size: 100%;
     padding-bottom: 55px;
 
 }
 
 .get_taital{
-	width: 100%;
-	float: left;
-	text-align: center;
-	color:  #CB4F91;
-	font-size: 50pt;
+  width: 100%;
+  float: left;
+  text-align: center;
+  color:  #fff;
+  font-size: 50pt;
     padding-bottom: 40px;
 
 }
 
 .email_box{
-	width: 100%;
-	float: left;
-	background-color: #CB4F91;
-	border-radius: 20px;
-	height: auto;
+  width: 100%;
+  float: left;
+  background-color: #CB4F91;
+  border-radius: 20px;
+  height: auto;
     padding: 50px 20px;
     opacity: 0.80;
 }
@@ -490,12 +625,12 @@ button.main_bt {
 }
 
 .touch_section_2{
-	width: 100%; 
-	float: left;
-	background-color: #CB4F91;
-	padding-top: 40px;	
-	padding-bottom: 40px;
-	height: auto;
+  width: 100%; 
+  float: left;
+  background-color: #CB4F91;
+  padding-top: 40px;  
+  padding-bottom: 40px;
+  height: auto;
 }
 
 .email_text {
@@ -531,23 +666,23 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 }
 
 .our_texts{
-	width: 100%;
-	float: left;
-	font-size: 40pt;
-	color: #CB4F91;
+  width: 100%;
+  float: left;
+  font-size: 40pt;
+  color: #CB4F91;
 }
 
 .subscribe_bt{
-	padding-right: 30px;
-	padding-left: 30px;
-	background-color: #000;
-	border-top-right-radius: 30px !important;
-	color: #fff;
-	padding-bottom: 10px; 
-	padding-top: 10px;
-	border-bottom-right-radius: 30px !important;
-	border: 0px; 
-	font-size: 17pt;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #000;
+  border-top-right-radius: 30px !important;
+  color: #fff;
+  padding-bottom: 10px; 
+  padding-top: 10px;
+  border-bottom-right-radius: 30px !important;
+  border: 0px; 
+  font-size: 17pt;
 }
 
 .email_bt {
@@ -562,41 +697,41 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 }
 
 .section_footer{
-	width: 100%;
-	float: left;
-	background-color: #CB4F91;
-	height: auto;
-	padding-top: 30px;
-	padding-bottom: 30px; 
+  width: 100%;
+  float: left;
+  background-color: #CB4F91;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px; 
 
 }
 
 .mail_section{
-	width: 100%;
-	float: left;
+  width: 100%;
+  float: left;
 }
 
 .mail_section ul{
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .mail_section li{
-	float: left;
-	font-size: 12pt;
-	color: #CB4F91;
-	padding-top: 10px;
-	padding-right: 35px;
+  float: left;
+  font-size: 12pt;
+  color: #CB4F91;
+  padding-top: 10px;
+  padding-right: 35px;
 }
 .map_text{
-	padding-left: 30px;
+  padding-left: 30px;
 
 }
 
 .footer_section_2{
-	width: 100%;
-	float: left;
-	padding-top: 40px;
+  width: 100%;
+  float: left;
+  padding-top: 40px;
 }
 
 .shop_text {
@@ -645,16 +780,16 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
     padding: 25px 0px;
 }
 .footer-img{
-	width: 100% !important;
-	float: left;
-	margin-top: 10px;
-	padding-bottom: 15px;
+  width: 100% !important;
+  float: left;
+  margin-top: 10px;
+  padding-bottom: 15px;
 }
 
 .social-icon{
-	width: 100%;
-	float: left;
-	border-bottom: 3px solid#fff;
+  width: 100%;
+  float: left;
+  border-bottom: 3px solid#fff;
 }
 
 .icons {
@@ -666,21 +801,21 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 .icons li{ float: left; padding-left: 40px; }
 
 .copyright{ 
-	width: 100%;
-	float: left;
-	font-size: 12pt;
-	color: #CB4F91;
-	text-align: center;
-	padding-top: 25px;
-	font-family: Poppins; 
+  width: 100%;
+  float: left;
+  font-size: 12pt;
+  color: #CB4F91;
+  text-align: center;
+  padding-top: 25px;
+  font-family: Poppins; 
 }
 
 .copyright a{
-	color: #CB4F91;
+  color: #CB4F91;
 }
 
 .copyright a:hover{
-	color: #CB4F91;
+  color: #CB4F91;
 }
 
 
@@ -731,11 +866,11 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 
 
 .header-main{
-	width: 100%;
-	float: left;
-	background-color: #CB4F91;
-	height: auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
+  width: 100%;
+  float: left;
+  background-color: #CB4F91;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .footer-logo{  }
